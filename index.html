@@ -6,144 +6,137 @@
     <title>Portfolio: Jasmine Henri</title>
 
     <style>
-      body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: #EAEDED;
-        margin: 0;
-        max-width: 900px;
-      }
+     body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EAEDED;
+  margin: 0;
+  max-width: 900px;
+}
 
-      .header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-      }
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-      .logo {
-        margin-left: 260px;
-      }
+.logo {
+  margin-left: 260px; /* Kept the same for positioning */
+}
 
-      .logo2 {
-        position: absolute;
-        top: 1220px;
-        right: 1200px;
-      }
+.logo2 {
+  position: absolute;
+  top: 1220px; /* Adjust if necessary */
+  right: 1200px; /* Adjust if necessary */
+}
 
-      .pic1 {
-        margin-right: 20px;
-        margin-top: 10px;
-      }
+.pic1 {
+  margin-right: 20px;
+  margin-top: 10px;
+}
 
-      .pic2 {
-        margin-right: 20px;
-        margin-top: 10px;
-      }
+.pic2 {
+  margin-right: 20px;
+  margin-top: 10px;
+}
 
-      .pic3 {
-        position: relative;
-        margin-top: -270px;
-        margin-left: 600px;
-      }
+.pic3 {
+  margin-left: 500px; /* Adjust this to control horizontal spacing */
+  margin-top: -300;   
+}
 
-      .contact-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: white;
-        color: #052765;
-        text-decoration: none;
-        border-radius: 10px;
-        /* Rounded corners */
-        font-size: 18px;
-        /* Font size */
-        margin-top: 5px;
-        /* Space above the button */
-      }
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #052765;
+  text-decoration: none;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Font size */
+  margin-top: 5px; /* Space above the button */
+}
 
-      ul {
-        list-style-type: none;
-        margin-top: -70px;
-        margin-left: 190px;
-        padding: 0;
-        display: flex;
-      }
+ul {
+  list-style-type: none;
+  margin-top: 20px; /* Changed from -70px */
+  margin-left: 190px;
+  padding: 0;
+  display: flex;
+}
 
-      li {
-        float: right;
-        margin-right: 60px;
-      }
+li {
+  margin-right: 60px; /* Kept the same for positioning */
+}
 
-      li a {
-        display: block;
-        padding: 10px;
-        color: #052765;
-        font-size: 20px;
-        text-decoration: none;
-      }
+li a {
+  display: block;
+  padding: 10px;
+  color: #052765;
+  font-size: 20px;
+  text-decoration: none;
+}
 
-      li a:hover {
-        text-decoration: underline;
-      }
+li a:hover {
+  text-decoration: underline;
+}
 
-      #section1 {
-        margin-bottom: -200px;
-        margin-left: -200px;
-        text-align: left;
-      }
+#section1 {
+  margin-bottom: 20px; /* Changed from -200px */
+  margin-left: 0; /* Reset to 0 */
+  text-align: left;
+}
 
-      #section2 {
-        background-color: #052765;
-        color: white;
-        width: 1500px;
-        height: 150px;
-        padding: 10px;
-        margin-top: 250px;
-        text-align: center;
-      }
+#section2 {
+  background-color: #052765;
+  color: white;
+  width: 100%; /* Changed to 100% for responsiveness */
+  height: 150px;
+  padding: 10px;
+  margin-top: 250px;
+  text-align: center;
+}
 
-      #section3 {
-        background-color: white;
-        width: 1500px;
-        height: 400px;
-        display: flex;
-        justify-content: right;
-       color: #052765;
-        box-sizing: border-box; 
-      }
+#section3 {
+  background-color: white;
+  width: 100%; /* Changed to 100% for responsiveness */
+  height: 400px;
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  color: #052765;
+  box-sizing: border-box; 
+  padding: 20px; /* Added padding for spacing */
+}
 
-      #section2 h1 {
-        font-size: 55px;
-        font-weight: normal;
-        margin: 10px 0;
-        /* Add vertical margin for spacing above and below */
-      }
+#section2 h1 {
+  font-size: 55px;
+  font-weight: normal;
+  margin: 10px 0; /* Keep vertical margin */
+}
 
-      #section2 h3 {
-        font-size: 20px;
-        font-weight: normal;
-        margin: 2px 0;
-      }
+#section2 h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 2px 0;
+}
 
-      #section3 .text-box {
-        background-color: #EAEDED;
-        padding: 20px;
-        /* Adjust padding as needed */
-        margin-right: 20px;
-        /* Add margin to the right */
-        margin-top: 60px;
-      }
+#section3 .text-box {
+  background-color: #EAEDED;
+  padding: 20px; /* Adjust padding as needed */
+  margin-right: 20px; /* Add margin to the right */
+  margin-top: 60px; /* Keep top margin */
+}
 
-
-      .footer {
-        align-items: center; 
-        width: 1500px;
-        background-color: #052765;
-        color: white;
-        text-align: center;
-        padding: 20px 0;
-        margin-top: auto;
-      }
+.footer {
+  align-items: center; 
+  width: 100%; /* Changed to 100% for responsiveness */
+  max-width: 900px; /* Optional: Set a maximum width */
+  background-color: #052765;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
     </style>
   </head>
   <body>
