@@ -83,11 +83,22 @@ li a:hover {
 }
 
 #section1 {
-  width: 1920px;
-  height: 190px;
-  margin-bottom: 20px; /* Changed from -200px */
-  margin-left: 0; /* Reset to 0 */
-  text-align: left;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the images */
+  margin: 20px 0; /* Add margin */
+  width: 100%; /* Full width */
+  max-width: 900px; /* Max width */
+}
+
+.image-container {
+  display: flex; /* Make it a flex container */
+  width: 100%; /* Full width */
+}
+
+.pic1, .pic2 {
+  max-width: 320px; /* Limit max width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Add margin to both images */
 }
 
 #section2 {
